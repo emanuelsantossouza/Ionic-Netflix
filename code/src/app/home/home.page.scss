@@ -1,0 +1,81 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+
+}
+
+.header>img {
+  width: 25px;
+}
+
+.titulo {
+  font-size: 11px;
+  font-weight: bolder;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main-poster {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  background-image: url("https://www.themoviedb.org/t/p/original/8zbAoryWbtH0DKdev8abFAjdufy.jpg");
+  background-size: cover;
+  background-position: center;
+
+  .gradient {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("/assets/img/gradient.png");
+    background-size: cover;
+
+    &.top {
+      top: 0;
+      transform: rotate(180deg);
+
+    }
+
+    &.bottom {
+      bottom: 0;
+
+      .title {
+        position: absolute;
+        left: -68px;
+        bottom: -15px;
+        width: 100%;
+      }
+
+      img {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+ion-col{
+  padding: 1px;
+}
+
+.actions {
+  margin-top: -50px;
+
+  ion-button {
+    border-radius: 70px;
+    
+    ion-label {
+      font-size: 11px;
+      font-weight: bolder;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      display: block;
+    }
+  }
+}
+
+.mn{
+  margin-left: -20px;
+}
