@@ -61,6 +61,22 @@
   </ion-grid>
 
   <div class="content ion-padding">
-    
+    <div class="titlre">
+      <span>Prévias</span>
+    </div>
+
+    <ion-slides class="stories" >
+      <ion-slide *ngFor="let story of stories">
+        <ion-img [src]="story.Poster"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="title">
+      <span>Minha Lista</span>
+    </div>
+
+    <div class="title">
+      <span>Continuar assistindo</span>
+    </div>
   </div>
 </ion-content>
