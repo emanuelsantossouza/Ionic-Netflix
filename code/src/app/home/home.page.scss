@@ -65,7 +65,7 @@ ion-col{
 
   ion-button {
     border-radius: 70px;
-    
+
     ion-label {
       font-size: 11px;
       font-weight: bolder;
@@ -78,4 +78,28 @@ ion-col{
 
 .mn{
   margin-left: -20px;
+}
+
+.content{
+  .title{
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .stories{
+    ion-slides{
+      margin: 120px;
+    }
+
+    ion-img{
+      width: 75px;
+      height: 75px;
+      margin-bottom: 5px;
+    }
+
+    ion-img::part(image){
+      border-radius: 65%;
+      border: 1px solid white;
+    }
+  }
 }

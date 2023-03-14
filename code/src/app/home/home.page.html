@@ -61,22 +61,78 @@
   </ion-grid>
 
   <div class="content ion-padding">
-    <div class="titlre">
+    <div class="title ion-margin-vertical">
       <span>Prévias</span>
     </div>
 
-    <ion-slides class="stories" >
-      <ion-slide *ngFor="let story of stories">
-        <ion-img [src]="story.Poster"></ion-img>
+    <ion-slides class="stories" [options]="slidesOptions">
+      <ion-slide>
+        <ion-img  src="assets/img/cobra.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/supernatural.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/witcher.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/lupin.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/eli.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/dead.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/felicidade.jpeg"></ion-img>
       </ion-slide>
     </ion-slides>
 
-    <div class="title">
+    <div class="title ion-margin-vertical">
       <span>Minha Lista</span>
     </div>
 
-    <div class="title">
+    <ion-slides class="lists">
+      <ion-slide>
+        <ion-img src="assets/img/filmes/alto.webp"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/boruto.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/cruella.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/luffy.png"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/naruto.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/wednesday.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
+
+    <div class="title ion-margin-vertical">
       <span>Continuar assistindo</span>
     </div>
+
+    <ion-slides class="stories">
+      <ion-slide>
+        <ion-img src="assets/img/filmes/wednesday.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/supernatural.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/filmes/boruto.jpg"></ion-img>
+      </ion-slide>
+      <ion-slide>
+        <ion-img src="assets/img/dead.jpg"></ion-img>
+      </ion-slide>
+    </ion-slides>
+
   </div>
 </ion-content>
